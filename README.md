@@ -1,26 +1,33 @@
-Ionic App Base
+Ionic Camera Proof of Concept
 =====================
 
-A starting project for Ionic that optionally supports using custom SCSS.
+An Ionic camera application for iOS/Android.
 
-## Using this project
+## Status
 
-We recommend using the [Ionic CLI](https://github.com/driftyco/ionic-cli) to create new Ionic projects that are based on this project but use a ready-made starter template.
+This project currently builds correctly for both Android and iOS. The app has successfully
+taken a picture in an Android environment.
 
-For example, to start a new Ionic project with the default tabs interface, make sure the `ionic` utility is installed:
+## Installation
+
+In order to run this project, you need to install the following prerequisites with these commands:
+This installs:
+* [Ionic](http://ionicframework.com)
+* [Cordova Camera Plugin](https://github.com/apache/cordova-plugin-camera)
+* [Cordova Android Platform](https://cordova.apache.org/docs/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
+* [Cordova iOS Platform](https://cordova.apache.org/docs/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide)
 
 ```bash
-$ npm install -g ionic
+$ npm install -g ionic cordova
+$ cordova plugin add cordova-plugin-camera
+$ cordova platform update ios
+$ cordova platform update android
 ```
+
 
 Then run:
 
 ```bash
-$ ionic start myProject tabs
+$ ionic run <platform (ios|android) >
 ```
-
-More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/getting-started) page and the [Ionic CLI](https://github.com/driftyco/ionic-cli) repo.
-
-## Issues
-Issues have been disabled on this repo, if you do find an issue or have a question consider posting it on the [Ionic Forum](http://forum.ionicframework.com/).  Or else if there is truly an error, follow our guidelines for [submitting an issue](http://ionicframework.com/submit-issue/) to the main Ionic repository.
 

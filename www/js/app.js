@@ -16,9 +16,8 @@ angular.module('starter', ['ionic','ngCordova'])
       StatusBar.styleDefault();
     }
   });
-});
-
-exampleApp.controller("ExampleController", function($scope, $cordovaCamera) {
+})
+.controller("ExampleController", function($scope, $cordovaCamera) {
 
     $scope.takePicture = function() {
         var options = {
